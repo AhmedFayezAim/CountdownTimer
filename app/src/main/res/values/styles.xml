@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextStyle">
+        <item name="android:padding">@dimen/_16dp</item>
+        <item name="android:textSize">@dimen/normal_text</item>
+    </style>
+
+    <style name="TextNote">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="paddingEnd">@dimen/_16dp</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/purple_700</item>
+    </style>
+
+    <style name="ClickableTextStyle" parent="TextStyle">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDatePicked"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/tvChangeDate"
+            app:layout_constraintStart_toEndOf="@id/tvDate"
+            app:layout_constraintTop_toTopOf="@id/tvDate"
+            tools:text="yy/mm/dd" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChangeDate"
+            style="@style/ClickableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvDate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTime"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimePicked"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/tvChangeTime"
+            app:layout_constraintStart_toEndOf="@id/tvTime"
+            app:layout_constraintTop_toTopOf="@id/tvTime"
+            tools:text="HH:mm:ss" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChangeTime"
+            style="@style/ClickableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvTime" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimer"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTimePicked" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNote"
+            style="@style/TextNote"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:text="bla bla bla"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTimer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTimer"
+            app:layout_constraintTop_toTopOf="@+id/tvTimer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCountdown"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+            android:text="@string/reset_counter_value" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Countdown Timer</string>
+    <string name="date">Picked date:</string>
+    <string name="change">Change</string>
+    <string name="time">Picked time:</string>
+    <string name="time_left">Time left:</string>
+    <string name="pick_time_after_now_to_start_counting">(Pick time after now to start counting)</string>
+    <string name="reset_counter_value">00:00:00:00</string>
+</resources>
